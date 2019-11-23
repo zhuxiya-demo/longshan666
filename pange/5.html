@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>发展脉络</title>
+    <link rel="stylesheet" href="../element-ui/lib/theme-chalk/index.css">
+    <style>
+     body {
+        background: #eee;
+       
+    }
+    .el-timeline-item__timestamp.is-top {
+            margin-bottom: 8px;
+            padding-top: 4px;
+            font-size: 18px;
+            color: dodgerblue;
+    }
+    .el-timeline-item__content {
+    color: #303133;
+    font-size: 16px;
+  }
+    </style>
+   
+</head>
+
+<body>
+    <div class="app">
+        <h1>发展脉络</h1>
+        <div class="block">
+            <el-timeline>
+                <el-timeline-item timestamp="距今约8500-7500" placement="top">
+                    <el-card>
+                        <h4>西河文化（龙山西河遗址）</h4>
+
+                    </el-card>
+                </el-timeline-item>
+                <el-timeline-item timestamp="距今约7500-6100" placement="top">
+                    <el-card>
+                        <h4>北辛文化（龙山小董家遗址、焦家遗址）</h4>
+
+                    </el-card>
+                </el-timeline-item>
+                <el-timeline-item timestamp="距今约6100-5000" placement="top">
+                    <el-card>
+                        <h4>大汶口文化（龙山焦家遗址）</h4>
+
+                    </el-card>
+                </el-timeline-item>
+                <el-timeline-item timestamp="距今约5000-4000" placement="top">
+                    <el-card>
+                        <h4>龙山文化（城子崖遗址）</h4>
+
+                    </el-card>
+                </el-timeline-item>
+                <el-timeline-item timestamp="距今约4000-3500" placement="top">
+                    <el-card>
+                        <h4>岳石文化、夏（城子崖遗址）</h4>
+
+                    </el-card>
+                </el-timeline-item>
+                <el-timeline-item timestamp="距今约3500-2700" placement="top">
+                    <el-card>
+                        <h4>商、周（谭国遗址）</h4>
+
+                    </el-card>
+                </el-timeline-item>
+                <el-timeline-item timestamp="距今约2700-2200" placement="top">
+                    <el-card>
+                        <h4>春秋战国、秦（平陵邑、平陵县）</h4>
+
+                    </el-card>
+                </el-timeline-item>
+                <el-timeline-item timestamp="距今约2200-1200" placement="top">
+                    <el-card>
+                        <h4>两汉、魏、晋、南北朝、隋朝（济南国、济南郡、乐安、潭州、全节、东平陵城）</h4>
+
+                    </el-card>
+                </el-timeline-item>
+                <el-timeline-item timestamp="距今约1200-现在" placement="top">
+                    <el-card>
+                        <h4>宋、元、明、清、民国、中国人民共和国（龙山镇）</h4>
+
+                    </el-card>
+                </el-timeline-item>
+            </el-timeline>
+        </div>
+    </div>
+</body>
+
+</html>
+<script src="../js/vue.js"></script>
+<script src="../element-ui/lib/index.js"></script>
+<script>
+    let vm = new Vue({
+          el: '.app',
+          data: {
+              activeName: '1'
+          }
+      });
+  
+  </script>

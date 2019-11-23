@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>历史名人</title>
+    <link rel="stylesheet" href="../element-ui/lib/theme-chalk/index.css">
+    <style>
+        body {
+            background: #eee;
+            background: url('../imges/histroy.jpg');
+            background-size: cover;
+        }
+        h1{
+            position: absolute;
+            left: 45%;
+            color: darkturquoise;
+        }
+        .app{
+          font-size: 20px;
+          
+             /* background-image:url(../imges/histroy.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;  */
+
+        }
+        .el-collapse{
+            width: 50%;
+            float: left;
+            position: absolute;
+            background: #DCDEDB;
+            left: 142px;
+            top: 121px;
+            font-family: cursive;
+            font-weight: 400px;
+
+        }
+        .app img{
+        
+            width: 100%;
+
+            float: right;
+        }
+        .el-collapse-item__header{
+            opacity: 0.8;
+            font-size: 24px !important;
+            font-weight: 600;
+            padding-left: 10px;
+            background: #DCDEDB;
+            border: #ccc 1px solid !important;
+        }
+        .el-collapse-item__header:hover{
+            color: red;
+        }
+        .el-collapse-item__content{
+            opacity: 0.5;
+            font-size:18px;
+            font-weight: 600;
+            letter-spacing:2px;
+            padding-left:10px;
+            background: #DCDEDB;
+            /* padding */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="app">
+        <h1>历史名人</h1>
+        <el-collapse v-model="activeName" accordion>
+            <el-collapse-item title="黄帝与城子崖纪年" name="1">
+                <div>“黄帝历”。黄帝即位据说是在公元前2698
+                    年,即位时20岁,据此推算黄帝出生于公
+                    元前2717年,相传历法元年始于黄帝登基
+                    之日起算起。黄帝纪年影响深远,农历、
+                    道教历法均始于黄帝纪年为元年,为中国
+                    传统历法开始之年,史称开元,至今是开
+                    元4716年比西方历法元年早2697年,用
+                    开元年份减去2697就是西元的年份,例如,
+                    今年是中国传统历法(农历)开元
+                    4716-2697=西元2019年。推翻清朝的第
+                    一战南昌起义成功就决定用黄帝历,当时
+                    的银元刻字黄帝历4609年。
+                    据考古资料显示,龙山城子崖繁荣起始于
+                    距今4800-4600年。</div>
+            </el-collapse-item>
+            <el-collapse-item title="舜帝与黑陶" name="2">
+                <div>舜,姚姓,有虞氏,名重华,字都君,
+                    谥曰“舜”。
+                    《史记五帝本记》载:“舜耕于历山,
+                    历山之人皆让畔;渔雷泽,雷泽之人
+                    皆让居;陶河滨,河滨器皆不苦窳。
+                    一年而所居成聚,二年成邑,三年成
+                    都
+                    舜生活的龙山文化时代正是制陶技术
+                    的鼎盛时期。“舜诚制陶,精美不窳”,
+                    所以黑陶又被称之为“舜陶”。</div>
+
+            </el-collapse-item>
+            <el-collapse-item title="鲧筑城墙" name="3">
+                <div>鲧,姓姒,字熙,有崇氏。
+                    鲧是大禹的父亲,是城郭的创始人。
+                    相传,城子崖王国的城墙既是鲧设计
+                    铸造。
+                    城子崖岳石文化城墙的建筑使用了一项新的工艺版筑技术,即在夯筑过程中采用夹板从两侧固定土层,这样筑成的城墙不仅较之以前要坚实得多,墙体也更加规整高大。
+                    这是目前我国所发现的最早的版筑城墙,为研究城垣建筑史提供了科学、形象的珍贵资料。</div>
+
+            </el-collapse-item>
+            <el-collapse-item title="邹衍" name="4">
+                <div>邹衍(约公元前324年~公元前
+                    250年),战国末期齐国人(今山
+                    东省济南市章丘区相公庄街道郝庄
+                    村)。阴阳家代表人物、五行创
+                    始人,主要学说是五行学说、“五
+                    德终始说"和“大九州说”,又是稷下
+                    学宫著名学者,因他“尽言天事”,
+                    当时人们称他“谈天衍”,又称邹子。
+                    他创立的五行学是一种原始的字宙万物构造的学说。这种学说把所有物质都归结为
+                    由金、木、水、火、土构成。它的起
+                    源很早。后来又有阴阳说,企图用阴
+                    阳两气的矛盾变化来解释世间万物的
+                    变化。之后,阴阳和五行又往往结合
+                    在一起,合成为“阴阳五行说”。
+                    邹衍对阴阳五行说的研究方法是必先
+                    验小物、推而大之,至干无垠”。</div>
+
+            </el-collapse-item>
+            <el-collapse-item title="刘安" name="5">
+                <div>淮南王刘安好道学而研出“菽
+                    乳”,即“豆腐”,便将此“道术
+                    传入济南国腹地。
+                    龙山人传承创新,以“漤水”
+                    而制豆腐</div>
+
+            </el-collapse-item>
+            <el-collapse-item title="第一位武状元" name="6">
+                <div>员半千(620-712年),唐朝齐州全节(今
+                    章丘龙山平陵城)人,其祖先原居彭城
+                    (今江苏徐州),本姓刘氏,系南北朝时
+                    刘宋王朝皇族。后宋灭齐立,其十世
+                    祖刘凝之亡命北魏,以忠烈自比伍员
+                    (伍子胥),因此改姓为员(yun)。
+                    唐高宗永隆元年,考武举,凡举八科
+                    皆中。</div>
+
+            </el-collapse-item>
+            <el-collapse-item title="刘香" name="7">
+                <div>刘香东汉时期出生于济南平陵,公元102
+                    年(东汉和帝永元15年)其父刘错去世,刘
+                    香继位,是为济南孝王。
+                    刘香勤奋笃行,好学经书,性格宽仁,深受
+                    济南国上下爱戴,其仁爱道德感化了当时济
+                    南居民,郡国上下宽仁礼让,济南郡治清平。</div>
+
+            </el-collapse-item>
+            <el-collapse-item title="王莽" name="8">
+                <div>王莽济南平陵人,西汉孝元皇后王政君之
+                    侄。王莽是战国时代齐王田建的后代。
+                    韩信灭齐后,刘邦随即击败项羽,刘邦招降
+                    齐国田横,田横及手下因“义自杀,刘邦感其
+                    义举,将其后代其中一支迁居平陵,并赐其
+                    后代以“王为姓。</div>
+
+            </el-collapse-item>
+            <el-collapse-item title="王䜣" name="9">
+                <div>王䜣是西汉时期济南人,王莽妻子的
+                    曾祖父。
+                    区王䜣当初为一个郡县小吏,后来因勤
+                    于做事并积累功劳,逐渐升为被(pi)
+                    阳县令(今山东高青)。
+                    汉武帝征召王䜣任右辅都尉,代理右
+                    扶风,汉昭帝即位后,命王欣担任御
+                    史大夫、丞相,并被封为宜春侯。王
+                    欣死后,其子王谭继承了父亲的爵位,
+                    王谭死后,其子王咸继承他的爵位。
+                    王咸将其女儿嫁给王莽。</div>
+
+            </el-collapse-item>
+            <el-collapse-item title="李君球" name="10">
+                <div>唐朝初年,在平陵置谭州。
+                    李君球是唐初齐州平陵(今章丘龙
+                    山)人。其父李义满,隋末为齐郡
+                    通守,武德初年降唐。唐朝初年在
+                    平陵置谭州,拜李义满为总管,封
+                    平陵郡公。
+                    龙山传说：</div>
+
+            </el-collapse-item>
+
+
+        </el-collapse>
+        <!-- <img src="../imges/histroy.jpg" alt=""> -->
+    </div>
+</body>
+
+</html>
+<script src="../js/vue.js"></script>
+<script src="../element-ui/lib/index.js"></script>
+<script>
+  let vm = new Vue({
+        el: '.app',
+        data: {
+            activeName: '1'
+        }
+    });
+
+</script>

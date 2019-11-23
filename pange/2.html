@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>龙山特色</title>
+    <link rel="stylesheet" href="../element-ui/lib/theme-chalk/index.css">
+</head>
+<style>
+    body {
+        background: #eee;
+        height: 1150px;
+        background: url('../imges/龙山特色.jpg');
+        background-size: cover;
+    }
+    h1{
+            position: absolute;
+            left: 45%;
+            color: darkturquoise;
+        }
+    .app{
+        width: 100%;
+        height: 100%;
+      font-size: 20px
+    }
+    .el-collapse{
+        width: 35%;
+        float: left;
+        position: absolute;
+        background: rgba(255, 249, 249, 0.7);
+        right: 59px;
+        top: 46px;
+        font-family: cursive;
+        font-weight: 400px;
+
+    }
+    .app img{
+    
+        width: 95%;
+        height: 80%;
+        float: right;
+    }
+    .el-collapse-item__header{
+        opacity: 0.8;
+        font-size: 24px !important;
+        font-weight: 600;
+        padding-left: 10px;
+        background: rgba(255, 249, 249, 0.7);
+        border: rgba(238, 230, 230, 0.8) 1px solid !important;
+    }
+    .el-collapse-item__header:hover{
+        color: red;
+    }
+    .el-collapse-item__content{
+        opacity: 0.5;
+        font-size:18px;
+        font-weight: 600;
+        letter-spacing:2px;
+        padding-left:10px;
+        background: rgba(240, 247, 240, 0.5);
+        /* padding */
+    }
+</style>
+<body>
+    <div class="app">
+        <h1>龙山特色</h1>
+        <el-collapse v-model="activeName" accordion>
+            <el-collapse-item title="龙山小米" name="1">
+                <div>龙山自9000年前西河文化时期,便以“刀耕火种”方式选化训育野生“狗尾草而成龙山
+                    小米,并作为中国四大名米之一一直种植至今。史载,乾隆14年,东平陵城出现谷生
+                    三穗"瑞象,传之朝廷,引来乾隆帝南巡至章丘。龙山族人恭献“龙米金汤”,银碗金汤
+                    呈至御前,只见汤色金橙,仙气氤氲,香气扑鼻,轻呷一口,更觉温和绵柔,清香沁
+                    脾,余味无穷。龙颜大悦,遂传旨:龙山小米乃上乘佳品,后岁岁朝贡。
+                    龙山小米最佳种植区域以“龙山东平陵城”为中心,以“龙山石人坡”为地标点,东到便家
+                    村,西至芦家寨,南至白谷堆,北到党家村尤其以东平陵城及周边近20000亩地最
+                    为闻名。龙山小米品种繁多,尤以改良“路阴天旱”之后的“龙珠系列最好,米色金黄、
+                    籽大粒圆、营养丰富、品质优良、香味浓郁被誉为珍品,米质冠绝中外。</div>
+            </el-collapse-item>
+            <el-collapse-item title="龙山水豆腐" name="2">
+                <div>豆类古称“菽”,是五谷之一。考古资料显示自5000年前龙山时代,龙山便已熟练
+                    掌握了大豆种植方法。至汉代淮南王刘安好道学而研出“菽乳”,即“豆腐”。当时济
+                    南王刘辟光与淮南王刘安因同宗而往来频繁,豆腐制作工艺便传入济南国腹地。至
+                    明清时期,《醒世姻缘传》记载,龙山豆腐已成为远近闻名的馈赠佳品。
+                    龙山水豆腐的神奇在于用当地独特的井水“婪水点浆,可谓工艺独特,浑然天成。
+                    龙山水豆腐味道香醇,富有弹性,质嫩而不流,洁白如雪,其高节清亮,诠释了龙山
+                    豆腐蕴含的高洁品质的哲理。</div>
+
+            </el-collapse-item>
+            <el-collapse-item title="章丘铁锅" name="3">
+                <div>据史载,公元前204年,汉高祖刘邦在龙山平陵城建“济南郡”为大汉“铁都”,并设
+                    立“铁官工官”。章丘自此成为“中国铁匠之乡”。两汉时期,在此制作刀、剑、锤、
+                    戈等兵器保家卫国,制作锄、锨、铲、锯、锛斧等农业生产用具繁荣农业生产,
+                    铁器种类之全,史无前例。更是在1900年前制作出著名“济南椎成剑”,成为皇帝赏
+                    赐公卿重臣的特殊礼物。铸铁锻打柔化技术作为冶炼技术的新突破,领先世界近两
+                    千年历史。
+                    章丘铁匠代代传承,将铁艺传遍大江南北,尤其是铁锅技艺:十二道工序,十八遍
+                    火候,超过1000℃高温冶炼,数万次锤击,造就传奇章丘铁锅。</div>
+
+            </el-collapse-item>
+            <el-collapse-item title="龙山树莓(覆盆子)" name="4">
+                <div>相传,神农氏尝百草时在龙山平陵城发现了覆盆子,因其味道鲜美而进献黄
+                    帝,黄帝食之大悦,发现它是药食同源的自然美味。《黄帝内经太素》中记
+                    述:空腹食之为食物,患者食之为药物。上古时期,已成为天然健肾美容物
+                    品。
+                    树莓(覆盆子)在欧美更大受欢迎,被称为“能吃的化妆品”,是欧美皇室接待必
+                    选的第一水果。近年来,龙山秉承开放胸怀,引进欧美近60种品种,在龙山
+                    与当地品种融合培育,科学发展。古老肥沃的土地造就了最美的水果之王。</div>
+
+            </el-collapse-item>
+            
+            <el-collapse-item title="龙山黑陶" name="5">
+                    <div>龙山具有9000年的制陶历史,是中国陶器文化之源头。从西河文化时期的加沙红
+                            陶,到距今6000年前焦家遗址的彩陶、白陶、红陶,到距今5000年在城子崖制造
+                            出黑如漆、亮如镜、薄如壳、硬如瓷,掂之飘忽若无,敲之铮铮有声的龙山黑陶,
+                            造就了中国陶器艺术的巅峰时代。龙山陶器文化源远流长,从未断绝。
+                            新时代,龙山黑陶艺术逢盛世重放异彩。先后被命名为“中国黑陶之乡”、“全国版
+                            权示范园区”、“山东省非物质文化遗产生产性保护示范基地等,培养出山东省工
+                            艺美术大师5人,山东省陶瓷艺术大师5人,山东省工艺美术名人5人,山东省首席
+                            技师3人、优秀非物质文化遗产传承人12人。龙山黑陶以地理标志证明商标为引领,
+                            成为“最具山东特色的十佳文化产品”</div>
+    
+                </el-collapse-item>
+            
+                <el-collapse-item title="平陵紫金醇(龙山小米醇)" name="6">
+                        <div>造酒之术古已有之,但以米酿酒始于龙山。考古资料显示,5000年前龙山区域已
+                                有高度发达的酿酒业,以龙山小米为原材料的米酒,风靡中国东部区域;高度发
+                                达的制陶业创制了大量酒器:陶鬶用来取酒酒,饮酒用的高柄杯演化成为最高
+                                贵的“黑陶蛋壳高柄杯”礼器。
+                                相传西汉初年,刘邦在龙山平陵设济南郡,朝贡的“龙山小米紫金醇”成为大汉皇帝
+                                的典藏,并传承后世诸君王。
+                                龙山米酒的制作方法一直传承至今。</div>
+        
+                    </el-collapse-item>
+                    
+
+        </el-collapse>
+        <!-- <img src="../imges/龙山特色.jpg" alt=""> -->
+    </div>
+</body>
+
+</html>
+<script src="../js/vue.js"></script>
+<script src="../element-ui/lib/index.js"></script>
+
+<script>
+    let vm = new Vue({
+          el: '.app',
+          data: {
+              activeName: '1'
+          }
+      });
+  
+  </script>

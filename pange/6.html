@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>历史遗迹</title>
+    <link rel="stylesheet" href="../element-ui/lib/theme-chalk/index.css">
+</head>
+<style>
+    body {
+        background: #eee;
+        height: 100%;
+        background: url('../imges/yizhi.jpg');
+        background-size: cover;
+    }
+    h1{
+            position: absolute;
+            left: 45%;
+            color: darkturquoise;
+        }
+    .app{
+        width: 100%;
+        height: 100%;
+      font-size: 20px
+    }
+    .el-collapse{
+        width: 51%;
+    float: left;
+    position: absolute;
+    background: rgba(255, 249, 249, 0.7);
+    right: 290px;
+    top: 88px;
+    font-family: cursive;
+    font-weight: 400px;
+    border-top: none;
+
+    }
+    .app img{
+    
+        width: 100%;
+        height: 80%;
+        float: right;
+    }
+    .el-collapse-item__header{
+        opacity: 0.8;
+        font-size: 24px !important;
+        font-weight: 600;
+        padding-left: 10px;
+        background: rgba(160, 125, 90, 0.7);
+        border: rgba(197, 194, 189, 0.8) 1px solid !important;
+       
+    }
+    .el-collapse-item__header:hover{
+        color: red;
+    }
+    .el-collapse-item__content{
+        opacity: 0.5;
+        font-size:19px;
+        font-weight: 600;
+        letter-spacing:2px;
+        padding-left:10px;
+        background: rgba(124, 79, 56, 0.5);
+    }
+</style>
+<body>
+    <div class="app">
+        <h1>历史遗迹</h1>
+        <el-collapse v-model="activeName" accordion>
+            <el-collapse-item title="西河遗址" name="1">
+                <div>济南市章丘区龙山街道办事处龙山
+                        村村民习惯把环绕村西缘和北缘的巨野
+                        河支流称为“西河”,西河遗址也由此而
+                        得名。
+                        西河文化属新石器时代早期文化,
+                        据考古推测,上限距今9000年以上,前
+                        后延续时间大约在1500~2000年之间,
+                        是山东地区目前发现的最早的考古学人
+                        类文化遗存。
+                        文化代表:太昊氏、居龙氏
+                        是最早的 畜牧养殖和农耕起源之地，</div>
+            </el-collapse-item>
+            <el-collapse-item title="焦家遗址：," name="2">
+                <div> 5500年前的焦家新石器时代古城成为中国古代东方各国的中心聚落,被史学界尊称为中国最早的“王者之城”。
+                        焦家遗址因位于济南市章丘区龙山街道办事处焦家村西约800米处而得名。
+                        文化代表:句芒、神农氏(炎帝)。
+                焦家遗址现已证明是农耕文明的滥觞，是最早的玉器制作中心，还首创了棺椁墓葬文化。</div>
+
+            </el-collapse-item>
+            <el-collapse-item title="城子崖遗址" name="3">
+                <div>龙山文化,是中国古代的文明开始。
+                        龙山文化的发现与确立,源于1928年吴
+                        金鼎先生发现章丘龙出镇城子崖遗址和
+                        1930年1931年中国第一代考古学家对
+                        城子崖遗址的发掘。
+                        城子崖遗址,位于山东省济南市章丘区龙
+                        山街道龙山村东北,武源河东岸、胶济铁
+                        路北侧,总面积为22万平方米。
+                        城子崖遗址,是龙山文化的发现地、命名
+                        地,章丘龙山因此享有“中国考古圣地”的
+
+                        美誉。它是全国最大的龙山文化城址之一
+                        也是中国学者自己发现和命名的第一个考
+                        古学文化,中国第一部田野考古报告也在
+                        这里产生。城子崖遗址为我国史学界的重
+                        要地位和我国史前考古学做出了巨大贡献
+                        文化代表:黄帝、舜帝、鲧、后羿、姮娥
+                        伯益、牛郎、织女。城子崖时期的陶器艺术达到巅峰。
+                        被称为：
+                        中华文化源远的自证之地
+                        中国文化自觉的肇始之地
+                        中国工业文明的发轫之地
+                        中国农耕文明的传承之地
+                        中国城市文明的创制之地</div>
+
+            </el-collapse-item>
+            
+
+        </el-collapse>
+        <!-- <img src="../imges/yizhi.jpg" alt=""> -->
+    </div>
+</body>
+
+</html>
+<script src="../js/vue.js"></script>
+<script src="../element-ui/lib/index.js"></script>
+<script>
+    let vm = new Vue({
+          el: '.app',
+          data: {
+              activeName: '1'
+          }
+      });
+  
+  </script>

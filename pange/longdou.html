@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>龙“豆”</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+          
+        }
+         body{
+            background: url('../imges/bgbg.jpg');
+         }
+        .box {
+            margin: auto;
+            width: 100%;
+            height: 100%;
+          
+        }
+
+        header {
+            width: 80%;
+            height: 300px;
+            margin: 0 10%;
+
+        }
+
+        img {
+            width: 100%;
+            margin: auto;
+        }
+
+        .text {
+            width: 80%;
+            margin: 0 10%;
+            line-height: 40px;
+            animation:jackInTheBox 2s ease-in  ;
+        }
+        @-webkit-keyframes jackInTheBox {
+  from {
+    opacity: 0;
+    -webkit-transform: scale(0.1) rotate(30deg);
+    transform: scale(0.1) rotate(30deg);
+    -webkit-transform-origin: center bottom;
+    transform-origin: center bottom;
+  }
+
+  50% {
+    -webkit-transform: rotate(-10deg);
+    transform: rotate(-10deg);
+  }
+
+  70% {
+    -webkit-transform: rotate(3deg);
+    transform: rotate(3deg);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+@keyframes jackInTheBox {
+  from {
+    opacity: 0;
+    -webkit-transform: scale(0.1) rotate(30deg);
+    transform: scale(0.1) rotate(30deg);
+    -webkit-transform-origin: center bottom;
+    transform-origin: center bottom;
+  }
+
+  50% {
+    -webkit-transform: rotate(-10deg);
+    transform: rotate(-10deg);
+  }
+
+  70% {
+    -webkit-transform: rotate(3deg);
+    transform: rotate(3deg);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+.jackInTheBox {
+  -webkit-animation-name: jackInTheBox;
+  animation-name: jackInTheBox;
+}
+strong,li{
+    font-size: 18px;
+}
+i{
+    font-style: normal;
+    color: rgb(44, 178, 196);
+    font-weight: 600;
+}
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <header>
+            <img src="../imges/header.png" alt="">
+        </header>
+
+        <div class="text">
+            <p>
+                  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<i>西王村简介
+                        西王村共有183户,620人,村庄占面积150亩,耕地697亩,主要经济收入是做豆腐,西王水豆腐是济南地区的名吃,有着悠久的历史,豆腐始于西汉,而盛于唐宋,代代相传,至今已有二千一百年历史,豆腐自古以来就有北用卤,南用浆。
+                        我们西王水豆腐是采用天然的井水点制而成,西王村有古井两口,一口在路东叫甜水,用来泡豆磨浆,另一口井在路西叫水,用来点制豆腐,水是点制豆腐的神品,形成了与其它地区不一样的特色风味,而且营养价值更高,勤劳的西王人民加上得天独厚的水土优势,造就了一个家喻户晓的品牌。
+                        现已加入龙山味道公共品牌,共同把龙山豆腐发扬光大！</i> 
+                  
+                 <br><strong>西王村每一块豆腐的漫长成长历程：</strong> 
+                  <ul>
+                      <li> 种豆</li>
+                      <li> 收豆</li>
+                      <li> 脱豆</li>
+                      <li>储豆</li>
+                      <li>选豆</li>
+                      <li> 淘豆</li>
+                      <li> 磨浆</li>
+                      <li>  滤渣</li>
+                      <li>沥浆</li>
+                      <li>煮浆</li>
+                      <li> 杀沫</li>
+                      <li> 点卤</li>
+                      <li>挤浆</li>
+                      <li>  成品</li>
+                      <li>装车</li>
+                      <li>卖豆腐</li>
+                      <li>豆腐脑</li>
+
+                  </ul>
+                 <video src="../video/longdou.mp4" width="700px" height="500px" controls="controls" style="position: absolute;left: 346px;top: 617px;"></video>
+                    
+            </p>
+        </div>
+
+
+    </div>
+</body>
+
+</html>

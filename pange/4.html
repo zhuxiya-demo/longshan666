@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>龙山习俗</title>
+    <link rel="stylesheet" href="../element-ui/lib/theme-chalk/index.css">
+</head>
+<style>
+    body {
+        background: #eee;
+        height: 100%;
+        background: url('../imges/龙山习俗.jpg');
+        background-size: cover;
+    }
+    h1{
+            position: absolute;
+            left: 45%;
+            color: darkturquoise;
+        }
+    .app{
+        width: 100%;
+        height: 100%;
+      font-size: 20px
+    }
+    .el-collapse{
+        width: 35%;
+        float: left;
+        position: absolute;
+        background: rgba(255, 249, 249, 0.7);
+        right: 481px;
+         top: 118px;
+        font-family: cursive;
+        font-weight: 400px;
+        border-top: none;
+
+    }
+    .app img{
+    
+        width: 100%;
+        height: 80%;
+        float: right;
+    }
+    .el-collapse-item__header{
+        opacity: 0.8;
+        font-size: 24px !important;
+        font-weight: 600;
+        padding-left: 10px;
+        background: rgba(167, 151, 131, 0.7);
+        border: rgba(197, 194, 189, 0.8) 1px solid !important;
+       
+    }
+    .el-collapse-item__header:hover{
+        color: red;
+    }
+    .el-collapse-item__content{
+        opacity: 0.5;
+        font-size:19px;
+        font-weight: 600;
+        letter-spacing:2px;
+        padding-left:10px;
+        background: rgba(51, 52, 47, 0.5);
+        /* padding */
+    }
+</style>
+<body>
+    <div class="app">
+        <h1>龙山习俗</h1>
+        <el-collapse v-model="activeName" accordion>
+            <el-collapse-item title="汉婚礼习俗" name="1">
+                <div>纳采：就是男方有意与女方结为
+                        婚姻,就派请使者到女方
+                        家纳雁为礼,实际上就是
+                        现代人常说的说媒。
+                        纳雁:取其随时南北,不
+                        失其节,明不夺女子之时
+                        也。又取飞成行,止成列
+                        也,明嫁娶之礼,长幼有
+                        序,不相逾越也。</div>
+            </el-collapse-item>
+            <el-collapse-item title="焦家遗址习俗拔牙习俗," name="2">
+                <div>人工拔齿是焦家遗址大
+                        汶口文化时期居民的特有习俗之一,拔
+                        牙年龄一般在13-21岁之间的青年时期。男子结婚后需要拔牙以表示已婚身份，女子看到男子有拔牙的，就知道该男子已有妻室。
+                        头骨人工变形
+                        焦家遗址文化时期,
+                        居民中普遍头骨的枕部变扁,可能是长
+                        时间仰卧于硬质器具之上导致的颜骨枕
+                        部扁平。
+                        口含小球,焦家遗址大汶口文化居
+                        民有含石、陶球的特殊习俗,多为女性。</div>
+
+            </el-collapse-item>
+            <el-collapse-item title="图腾习俗" name="3">
+                <div>东夷图腾:凤鸟
+                        东夷族崇尚太阳、太(泰)山。太阳是天上
+                        的神,太山是地上的神。把太阳当做一支神
+                        鸟,叫踆鸟(踆乌,三只脚的乌鸦)。
+                        太阳与鸟的合一,成为东夷人的神灵、族徽。
+                        济南人祖先的图腾就是踆乌(太阳神鸟)。
+                        东夷的后嗣分支以鸟类的一支作为该宗支的
+                        图腾。如济南的一个邦国叫薄姑氏,既是以
+                        薄姑(鹁鸪鸟)为图腾;“天命玄鸟,降而生商”,商的始祖母吞下一个鸟卵而生育了
+                        其氏族,以燕子(被尊为玄鸟)是踆乌的后
+                        裔。
+                        舜,叫夋,又写作俊、舜。在甲骨文中,是
+                        一个鸟头人身的形象。</div>
+
+            </el-collapse-item>
+            
+
+        </el-collapse>
+        <!-- <img src="../imges/龙山习俗.jpg" alt=""> -->
+    </div>
+</body>
+
+</html>
+<script src="../js/vue.js"></script>
+<script src="../element-ui/lib/index.js"></script>
+
+<script>
+    let vm = new Vue({
+          el: '.app',
+          data: {
+              activeName: '1'
+          }
+      });
+  
+  </script>

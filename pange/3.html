@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>龙山传说</title>
+    <link rel="stylesheet" href="../element-ui/lib/theme-chalk/index.css">
+</head>
+<style>
+    body {
+        background: #eee;
+        height: 100%;
+       background: url('../imges/story.jpg');
+       background-size: cover;
+    }
+    h1{
+            position: absolute;
+            left: 45%;
+            color: rgb(255, 249, 249);
+        }
+    .app{
+        width: 100%;
+        height: 100%;
+      font-size: 20px
+    }
+    .el-collapse{
+        width: 35%;
+        float: left;
+        position: absolute;
+        background: rgba(255, 249, 249, 0.7);
+        right: 481px;
+         top: 117px;
+        font-family: cursive;
+        font-weight: 400px;
+        border-top: none;
+
+    }
+    .app img{
+    
+        width: 100%;
+        height: 80%;
+        float: right;
+    }
+    .el-collapse-item__header{
+        opacity: 0.8;
+        font-size: 24px !important;
+        font-weight: 600;
+        padding-left: 10px;
+        background: rgba(85, 87, 66, 0.7);
+        border: rgba(149, 122, 66, 0.8) 1px solid !important;
+       
+    }
+    .el-collapse-item__header:hover{
+        color: red;
+    }
+    .el-collapse-item__content{
+        opacity: 0.5;
+        font-size:19px;
+        font-weight: 600;
+        letter-spacing:2px;
+        padding-left:10px;
+        background: rgba(51, 52, 47, 0.5);
+        /* padding */
+    }
+</style>
+<body>
+    <div class="app">
+        <h1>龙山传说</h1>
+        <el-collapse v-model="activeName" accordion>
+            <el-collapse-item title="穿越传说" name="1">
+                <div>青铜卡尺,是于汉代王莽时期的一
+                    种工具,固定尺通长13.3厘米,固
+                    定卡爪长5.2厘米、宽0.9厘米、厚
+                    0.5厘米。
+                    据传为王莽发明。青铜卡尺与现代
+                    游标卡尺相比,二者及其相似。
+                    现代好多文学作品把王莽描述成一
+                    个从现代穿越到古代的人。</div>
+            </el-collapse-item>
+            <el-collapse-item title="巨合城大战传说" name="2">
+                <div>新朝末年,政治腐败,民不聊生,农民起义遍及
+                    四海。因平陵是王莽故乡,起义军将平陵变成废
+                    都。平陵城西邻巨合城成为济南东部的唯一大镇,
+                    它不但是连接中国东西部的交通要道,更是当时
+                    兵家必争之地。
+                    建武三年(公元27)光武帝刘秀招安张步失败,
+                    随即派建威大将军耿弇起兵讨伐张步。
+                    耿弇亲帅精兵于城子崖(今龙山城子崖遗址)大
+                    战费邑,将费邑斩首,乘机连破四十余营,力拔
+                    济南全郡,打开了进兵齐国的通路,并一举平定
+                    山东地区。</div>
+
+            </el-collapse-item>
+            <el-collapse-item title="神秘古国传说" name="3">
+                <div>据考古调查,谭国古城遗址位于济南市章丘区龙山街道
+                    办事处城子崖及北约一公里的孙家村东,遗址总面积超
+                    过40万平方米。遗址文化内容多为商末至西周,文化堆
+                    积达2米左右,内涵多,十分丰富。
+                    文化代表:谭子及后人、齐桓公、管仲、邹衍</div>
+
+            </el-collapse-item>
+            
+
+        </el-collapse>
+        <!-- <img src="../imges/story.jpg" alt=""> -->
+    </div>
+</body>
+
+</html>
+<script src="../js/vue.js"></script>
+<script src="../element-ui/lib/index.js"></script>
+<script>
+    let vm = new Vue({
+          el: '.app',
+          data: {
+              activeName: '1'
+          }
+      });
+  
+  </script>
